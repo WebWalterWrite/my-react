@@ -6,6 +6,7 @@ COPY . ./
 RUN npm install
 RUN npm run build
 
+
 # install nginx serving routes react-router
 FROM nginx:alpine
 COPY nginx.conf /etc/nginx/conf.d/default.conf
